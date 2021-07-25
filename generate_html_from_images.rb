@@ -5,8 +5,6 @@ require 'exifr/jpeg'
 #example: '/path/to/dir/*.jpg' will convert all the images
 def generate(pathname,output_file)
 
-  File.open(output_file, 'w') {|file| file.truncate(0) }
-
   Dir.glob(pathname) do |filename|
     # Do work on files & directories ending in .jpg
     
