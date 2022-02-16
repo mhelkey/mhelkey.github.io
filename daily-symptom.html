@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!-- saved from url=(0061)https://s12.aconvert.com/convert/p3r68-cdx67/agpbb-fsrum.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>UC Davis Daily Symptom Survey</title>
+  </head>
+  <body style="margin-bottom: 100rem">
+    <table style="margin-top:5rem;" role="presentation" cellspacing="0" cellpadding="0" width="100%">
+      <tbody><tr><th id="name" style="font-family: Roboto, arial, sans-serif; font-size: 38.5px; font-weight: bold; text-align: center; background-color: #2ECC71; height: 70px;">
+        Matthew Helkey</th>
+      </tr><tr>
+        <td style="font-family: Roboto, arial, sans-serif; font-size: 38.5px; font-weight: bold; text-align: center; background-color: #2ECC71; ">
+          APPROVED
+        </td>
+      </tr>
+      <tr>
+        <td id="date" style="font-family: Roboto, arial, sans-serif; font-size: 38.5px; font-weight: bold; text-align: center; background-color: #2ECC71; ">
+          Saturday, April 17th, 2021
+        </td>
+      </tr>
+        
+      <tr><th id="time" style="font-family: Roboto, arial, sans-serif; font-size: 38.5px; font-weight: bold; text-align: center; height: 70px;">
+        12:40 PM
+      </th>
+    </tr></tbody></table>
+    <p>
+      You are cleared to access UC Davis campus sites. Please save or print this approval and present it at the facility you wish to enter. A temperature check may also be required for access.
+</p><p>Thank you for completing the daily symptom survey and helping reduce the spread of the coronavirus in the UC Davis community.
+</p><p>Please reach out if you need help. For medical visits, you can schedule a telehealth appointment via <a href="https://hem.ucdavis.edu/">Health-e-Messaging</a> or speak with a nurse during normal business hours or the after-hours nurse advice service by calling 530-752-2349. For mental health visits, please review the <a href="https://ucdavis.box.com/s/4bhfkt7106ikz505p8b030phtdfni6ce">COVID-19 Mental Health Resource Flyer</a> for more information about mental health appointments, crisis support and self-care that is available, based on where you are residing. Text 'RELATE' to 741741 for free, immediate and confidential crisis support by text message.
+</p><p>
+<b>Reminder</b>
+<br>You only need to complete the daily symptom survey if you enter university facilities or have close contact with others on campus.
+
+  
+
+</p></body>
+
+<script>
+
+        function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is inclusive
+}
+
+        var nm = prompt("Please enter your name", "Matthew Helkey");
+
+        var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        var dayofweek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+
+        var date = document.getElementById("date");
+        var time = document.getElementById("time");
+        var username = document.getElementById("name");
+
+        var today = new Date();
+        var day = today.getDay();
+        var dd = today.getDate()
+        var mm = today.getMonth(); //January is 0!
+        var yyyy = today.getFullYear();
+
+        var end = "";
+
+        if (dd % 10 == 1) {
+                end = "st";
+        }
+        else if (dd % 10 ==2) {
+                end = "nd";
+        }
+        else if (dd % 10 ==3) {
+                end = "rd";
+        }
+        else {
+                end = "th";
+        }
+
+        username.textContent = nm;
+
+        date.textContent = dayofweek[day] + ", " + months[mm] + " " + String(dd) + end + ", " + yyyy;
+
+        time.textContent = "6:" + String(getRandomInt(2, 58)).padStart(2, '0') + " AM";
+
+
+</script>
+
+</html>
